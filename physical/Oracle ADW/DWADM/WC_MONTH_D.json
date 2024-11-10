@@ -1,0 +1,71 @@
+{
+  "physicalTable" : {
+    "name" : "WC_MONTH_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ROW_WID",
+      "dataType" : "VARCHAR",
+      "length" : 80,
+      "nullable" : true
+    }, {
+      "name" : "CAL_MONTH",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "CAL_YEAR",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "CAL_QTR",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "MONTH_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 36,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_HALF",
+      "dataType" : "CHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_MONTH",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_QTR",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_YEAR",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_FSCL_MNTH",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_FSCL_QTR",
+      "dataType" : "VARCHAR",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "PER_NAME_FSCL_YEAR",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

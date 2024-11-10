@@ -28,6 +28,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.EMPLOYEE_WID" ]
           }
+        }, {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.EMPLOYEE_WID" ]
+          }
         } ]
       }
     }, {
@@ -41,6 +47,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ABS_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_WID" ]
           }
         } ]
       }
@@ -118,10 +130,116 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.EMPLOYEE_ID" ]
           }
+        }, {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.EMPLOYEE_ID" ]
+          }
         } ]
+      }
+    }, {
+      "name" : "ABS_CREDIT",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_CREDIT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ABS_DEBIT",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_DEBIT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "APPR_MONTH_WID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.APPR_MONTH_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRANS_MONTH_WID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.TRANS_MONTH_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Absence Credit Month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_CREDIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Absence Debit Month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_DEBIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
       }
     } ],
     "logicalTableSources" : [ {
+      "name" : "Fact_wc_absence_month_f",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Employee.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
       "name" : "FACT_WC_ABSENCE_F",
       "disable" : false,
       "tableMapping" : {

@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "oracle",
+    "type" : "GLOBAL",
+    "connectionPool" : "connectionPool:Oracle ADW.Oracle Connection Pool InIt Block",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT SYSDATE FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_YEAR",
+      "value" : "'2024-11-10'"
+    } ],
+    "runSchedule" : {
+      "interval" : 1,
+      "intervalUnit" : "DAYS",
+      "startingOn" : "2024-11-10 13:55:06.94"
+    },
+    "disable" : false
+  }
+}

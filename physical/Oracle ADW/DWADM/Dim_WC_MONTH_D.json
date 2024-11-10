@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "Dim_WC_MONTH_D",
+    "sourceTable" : "physicalTable:Oracle ADW.DWADM.WC_MONTH_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

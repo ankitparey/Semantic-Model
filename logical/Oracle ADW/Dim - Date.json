@@ -15,6 +15,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.ROW_WID" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.ROW_WID" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -60,6 +66,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.CAL_MONTH" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.CAL_MONTH" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -74,6 +86,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.CAL_QTR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.CAL_QTR" ]
           }
         } ]
       },
@@ -119,6 +137,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.CAL_YEAR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.CAL_YEAR" ]
           }
         } ]
       },
@@ -540,6 +564,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.MONTH_NAME" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.MONTH_NAME" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -585,6 +615,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_FSCL_MNTH" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_FSCL_MNTH" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -599,6 +635,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_FSCL_QTR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_FSCL_QTR" ]
           }
         } ]
       },
@@ -645,6 +687,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_FSCL_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_FSCL_YEAR" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -659,6 +707,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_HALF" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_HALF" ]
           }
         } ]
       },
@@ -675,6 +729,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_MONTH" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_MONTH" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -689,6 +749,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_QTR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_QTR" ]
           }
         } ]
       },
@@ -750,6 +816,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "Dim_wc_month_d",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_YEAR" ]
+          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -804,6 +876,15 @@
       "disable" : false,
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.DIM_WC_DATE_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "Dim_wc_month_d",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Oracle ADW.DWADM.Dim_WC_MONTH_D" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
