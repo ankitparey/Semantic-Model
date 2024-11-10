@@ -1,0 +1,15 @@
+{
+  "subjectArea" : {
+    "name" : "Fact - Absence",
+    "sourceBusinessModel" : "businessModel:Oracle ADW",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Fact - Absence.Absence Metrics"
+    }, {
+      "name" : "presentationTable:Fact - Absence.Dim - Employee"
+    }, {
+      "name" : "presentationTable:Fact - Absence.Dim - Date"
+    }, {
+      "name" : "presentationTable:Fact - Absence.Dim - Absence"
+    } ]
+  }
+}

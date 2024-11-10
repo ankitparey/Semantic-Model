@@ -1,0 +1,152 @@
+{
+  "logicalTable" : {
+    "name" : "Fact - Absence",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "ROW_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ROW_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "EMPLOYEE_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.EMPLOYEE_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ABS_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ABS_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TRANS_DT_WID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.TRANS_DT_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "APPR_DT",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.APPR_DT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Absence Credit",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ABS_CREDIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Absence Debit",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ABS_DEBIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "EMPLOYEE_ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACT_WC_ABSENCE_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.EMPLOYEE_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "FACT_WC_ABSENCE_F",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Oracle ADW.DWADM.FACT_WC_ABSENCE_F" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Employee.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Oracle ADW.Dim - Absence",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:Oracle ADW.Dim - Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:Oracle ADW.Dim - Employee",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

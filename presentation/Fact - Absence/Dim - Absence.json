@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Absence",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Absence.ROW_WID"
+    }, {
+      "name" : "ABSENCE_CD",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Absence.ABSENCE_CD"
+    }, {
+      "name" : "ABSENCE_TYPE",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Absence.ABSENCE_TYPE"
+    }, {
+      "name" : "ACCRUAL_TYPE",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Absence.ACCRUAL_TYPE"
+    }, {
+      "name" : "ABSENCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Absence.ABSENCE_ID"
+    } ]
+  }
+}

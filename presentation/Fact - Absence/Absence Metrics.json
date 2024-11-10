@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Absence Metrics",
+    "presentationColumns" : [ {
+      "name" : "APPR_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.APPR_DT"
+    }, {
+      "name" : "Absence Credit",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Credit"
+    }, {
+      "name" : "Absence Debit",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit"
+    }, {
+      "name" : "EMPLOYEE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.EMPLOYEE_ID"
+    } ]
+  }
+}

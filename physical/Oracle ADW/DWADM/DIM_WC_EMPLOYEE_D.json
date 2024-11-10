@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_WC_EMPLOYEE_D",
+    "sourceTable" : "physicalTable:Oracle ADW.DWADM.WC_EMPLOYEE_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

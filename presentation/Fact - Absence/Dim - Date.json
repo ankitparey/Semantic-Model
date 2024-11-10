@@ -1,0 +1,195 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Date",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.ROW_WID"
+    }, {
+      "name" : "CALENDAR_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CALENDAR_DATE"
+    }, {
+      "name" : "CAL_HALF",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CAL_HALF"
+    }, {
+      "name" : "CAL_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CAL_MONTH"
+    }, {
+      "name" : "CAL_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CAL_QTR"
+    }, {
+      "name" : "CAL_TRIMESTER",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CAL_TRIMESTER"
+    }, {
+      "name" : "CAL_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CAL_WEEK"
+    }, {
+      "name" : "CAL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.CAL_YEAR"
+    }, {
+      "name" : "DATASOURCE_NUM_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DATASOURCE_NUM_ID"
+    }, {
+      "name" : "DATE_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DATE_KEY"
+    }, {
+      "name" : "DAY_AGO_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_AGO_DT"
+    }, {
+      "name" : "DAY_AGO_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_AGO_KEY"
+    }, {
+      "name" : "DAY_AGO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_AGO_WID"
+    }, {
+      "name" : "DAY_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_DT"
+    }, {
+      "name" : "DAY_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_NAME"
+    }, {
+      "name" : "DAY_OF_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_OF_MONTH"
+    }, {
+      "name" : "DAY_OF_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_OF_WEEK"
+    }, {
+      "name" : "DAY_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.DAY_OF_YEAR"
+    }, {
+      "name" : "FSCL_DAY_OF_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_DAY_OF_MONTH"
+    }, {
+      "name" : "FSCL_DAY_OF_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_DAY_OF_WEEK"
+    }, {
+      "name" : "FSCL_DAY_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_DAY_OF_YEAR"
+    }, {
+      "name" : "FSCL_HALF",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_HALF"
+    }, {
+      "name" : "FSCL_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_MONTH"
+    }, {
+      "name" : "FSCL_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_QTR"
+    }, {
+      "name" : "FSCL_TRIMESTER",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_TRIMESTER"
+    }, {
+      "name" : "FSCL_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_WEEK"
+    }, {
+      "name" : "FSCL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_YEAR"
+    }, {
+      "name" : "FSCL_FST_DAY_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.FSCL_FST_DAY_KEY"
+    }, {
+      "name" : "HALF_AGO_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.HALF_AGO_DT"
+    }, {
+      "name" : "HALF_AGO_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.HALF_AGO_KEY"
+    }, {
+      "name" : "HALF_AGO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.HALF_AGO_WID"
+    }, {
+      "name" : "INTEGRATION_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.INTEGRATION_ID"
+    }, {
+      "name" : "MONTH_AGO_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.MONTH_AGO_DT"
+    }, {
+      "name" : "MONTH_AGO_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.MONTH_AGO_KEY"
+    }, {
+      "name" : "MONTH_AGO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.MONTH_AGO_WID"
+    }, {
+      "name" : "MONTH_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.MONTH_NAME"
+    }, {
+      "name" : "PERIOD_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PERIOD_KEY"
+    }, {
+      "name" : "PER_NAME_FSCL_HALF",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_FSCL_HALF"
+    }, {
+      "name" : "PER_NAME_FSCL_MNTH",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_FSCL_MNTH"
+    }, {
+      "name" : "PER_NAME_FSCL_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_FSCL_QTR"
+    }, {
+      "name" : "PER_NAME_FSCL_TER",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_FSCL_TER"
+    }, {
+      "name" : "PER_NAME_FSCL_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_FSCL_WEEK"
+    }, {
+      "name" : "PER_NAME_FSCL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_FSCL_YEAR"
+    }, {
+      "name" : "PER_NAME_HALF",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_HALF"
+    }, {
+      "name" : "PER_NAME_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_MONTH"
+    }, {
+      "name" : "PER_NAME_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_QTR"
+    }, {
+      "name" : "PER_NAME_TER",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_TER"
+    }, {
+      "name" : "PER_NAME_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_WEEK"
+    }, {
+      "name" : "PER_NAME_OFFSET_WK",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_OFFSET_WK"
+    }, {
+      "name" : "PER_NAME_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_YEAR"
+    }, {
+      "name" : "QUARTER_AGO_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.QUARTER_AGO_DT"
+    }, {
+      "name" : "QUARTER_AGO_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.QUARTER_AGO_KEY"
+    }, {
+      "name" : "QUARTER_AGO_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Date.QUARTER_AGO_WID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Date Hierarchy",
+      "sourceLogicalTable" : "logicalTable:Oracle ADW.Dim - Date",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Date.Total",
+        "localization" : { }
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Date.Year",
+        "displayColumn" : "presentationColumn:Fact - Absence.Dim - Date.CAL_YEAR",
+        "localization" : { }
+      }, {
+        "name" : "Quater",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Date.Quater",
+        "displayColumn" : "presentationColumn:Fact - Absence.Dim - Date.CAL_QTR",
+        "localization" : { }
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Date.Month",
+        "displayColumn" : "presentationColumn:Fact - Absence.Dim - Date.FSCL_MONTH",
+        "localization" : { }
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Date.Detail",
+        "displayColumn" : "presentationColumn:Fact - Absence.Dim - Date.CALENDAR_DATE",
+        "localization" : { }
+      } ]
+    } ]
+  }
+}

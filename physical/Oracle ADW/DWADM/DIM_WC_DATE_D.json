@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_WC_DATE_D",
+    "sourceTable" : "physicalTable:Oracle ADW.DWADM.WC_DATE_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

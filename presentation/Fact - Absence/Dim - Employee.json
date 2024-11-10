@@ -1,0 +1,75 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Employee",
+    "presentationColumns" : [ {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.ROW_WID"
+    }, {
+      "name" : "EMPLOYEE_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.EMPLOYEE_ID"
+    }, {
+      "name" : "FIRST_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.FIRST_NAME"
+    }, {
+      "name" : "LAST_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LAST_NAME"
+    }, {
+      "name" : "MIDDLE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.MIDDLE_NAME"
+    }, {
+      "name" : "EMPLOYEE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.EMPLOYEE_NAME"
+    }, {
+      "name" : "DESIGNATION",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.DESIGNATION"
+    }, {
+      "name" : "DESIG_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.DESIG_ID"
+    }, {
+      "name" : "LEVEL_1",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEVEL_1"
+    }, {
+      "name" : "LEVEL_2",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEVEL_2"
+    }, {
+      "name" : "LEVEL_3",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEVEL_3"
+    }, {
+      "name" : "LEVEL_4",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEVEL_4"
+    }, {
+      "name" : "LEVEL_5",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEVEL_5"
+    }, {
+      "name" : "ADDRESS",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.ADDRESS"
+    }, {
+      "name" : "CONTACT_NO",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.CONTACT_NO"
+    }, {
+      "name" : "EFF_FROM_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.EFF_FROM_DT"
+    }, {
+      "name" : "EFF_TO_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.EFF_TO_DT"
+    }, {
+      "name" : "ASSIGNMENT_ID",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.ASSIGNMENT_ID"
+    }, {
+      "name" : "JOINING_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.JOINING_DT"
+    }, {
+      "name" : "END_DT",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.END_DT"
+    }, {
+      "name" : "PR_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.PR_KEY"
+    }, {
+      "name" : "DISTANCE",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.DISTANCE"
+    }, {
+      "name" : "LEAF",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEAF"
+    } ]
+  }
+}

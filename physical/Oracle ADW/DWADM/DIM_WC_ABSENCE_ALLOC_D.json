@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_WC_ABSENCE_ALLOC_D",
+    "sourceTable" : "physicalTable:Oracle ADW.DWADM.WC_ABSENCE_ALLOC_D",
+    "overrideSourceCacheSetting" : false
+  }
+}
