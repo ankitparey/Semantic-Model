@@ -70,6 +70,12 @@
     }, {
       "name" : "LEAF",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Employee.LEAF"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Employee Hierarchy",
+      "sourceLogicalTable" : "logicalTable:Oracle ADW.Dim - Employee",
+      "displayColumn" : "presentationColumn:Fact - Absence.Dim - Employee.EMPLOYEE_ID",
+      "localization" : { }
     } ]
   }
 }

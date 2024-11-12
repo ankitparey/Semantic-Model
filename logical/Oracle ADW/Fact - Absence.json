@@ -235,7 +235,7 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F" ]
       },
-      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Employee.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail" ],
+      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
@@ -245,7 +245,7 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.FACT_WC_ABSENCE_F" ]
       },
-      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Employee.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail" ],
+      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail", "logicalLevel:Oracle ADW.Dim - Employee.Detail" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false

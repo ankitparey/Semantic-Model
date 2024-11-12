@@ -13,6 +13,12 @@
     }, {
       "name" : "EMPLOYEE_ID",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.EMPLOYEE_ID"
+    }, {
+      "name" : "Absence Credit Month",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Credit Month"
+    }, {
+      "name" : "Absence Debit Month",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit Month"
     } ]
   }
 }

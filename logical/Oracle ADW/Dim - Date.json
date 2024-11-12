@@ -872,19 +872,19 @@
       "logicalLevel" : "Detail"
     } ],
     "logicalTableSources" : [ {
-      "name" : "DIM_WC_DATE_D",
+      "name" : "Dim_wc_month_d",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:Oracle ADW.DWADM.DIM_WC_DATE_D" ]
+        "tables" : [ "physicalTable:Oracle ADW.DWADM.Dim_WC_MONTH_D" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
     }, {
-      "name" : "Dim_wc_month_d",
+      "name" : "DIM_WC_DATE_D",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:Oracle ADW.DWADM.Dim_WC_MONTH_D" ]
+        "tables" : [ "physicalTable:Oracle ADW.DWADM.DIM_WC_DATE_D" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,

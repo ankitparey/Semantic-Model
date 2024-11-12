@@ -4,11 +4,11 @@
     "sourceTable" : "physicalTable:Oracle ADW.DWADM.WC_ABSENCE_F",
     "overrideSourceCacheSetting" : false,
     "joins" : [ {
-      "rightTable" : "physicalTable:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D",
+      "rightTable" : "physicalTable:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT",
       "useJoinExpression" : false,
       "joinConditions" : [ {
         "leftColumn" : "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.EMPLOYEE_ID",
-        "rightColumn" : "physicalColumn:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D.ROW_WID"
+        "rightColumn" : "physicalColumn:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT.MEMBER_KEY"
       } ],
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE"

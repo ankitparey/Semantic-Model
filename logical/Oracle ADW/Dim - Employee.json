@@ -348,22 +348,83 @@
         } ]
       },
       "logicalLevel" : "Detail"
+    }, {
+      "name" : "MEMBER_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_WC_EMPLOYEE_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT.MEMBER_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ANCESTOR_KEY",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_WC_EMPLOYEE_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT.ANCESTOR_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RELATIONSHIP_DISTANCE",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_WC_EMPLOYEE_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT.RELATIONSHIP_DISTANCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "IS_LEAF",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_WC_EMPLOYEE_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT.IS_LEAF" ]
+          }
+        } ]
+      }
     } ],
     "logicalTableSources" : [ {
       "name" : "DIM_WC_EMPLOYEE_D",
       "disable" : false,
       "tableMapping" : {
-        "tables" : [ "physicalTable:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D" ]
+        "tables" : [ "physicalTable:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D", "physicalTable:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT" ],
+        "logicalTableSourceJoins" : [ {
+          "leftTable" : "physicalTable:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT",
+          "rightTable" : "physicalTable:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D",
+          "joinType" : "INNER",
+          "disable" : false
+        } ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
     } ],
-    "hierarchyType" : "LEVEL_BASED",
-    "levelBasedHierarchy" : {
-      "defaultRootLevel" : "Total",
-      "ragged" : false,
-      "skipped" : false,
+    "hierarchyType" : "PARENT_CHILD",
+    "parentChildHierarchy" : {
+      "name" : "Parent-Child",
+      "description" : "Parent-Child",
       "logicalLevels" : [ {
         "name" : "Total",
         "numberOfElements" : 1,
@@ -375,11 +436,16 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "ROW_WID" ],
-        "displayKey" : "ROW_WID"
+        "displayKey" : "EMPLOYEE_ID",
+        "parentKey" : "PR_KEY"
       } ],
-      "logicalHierarchies" : [ {
-        "name" : "Employee Hierarchy",
-        "levels" : [ "Total", "Detail" ]
+      "relationshipTables" : [ {
+        "logicalTableSource" : "DIM_WC_EMPLOYEE_D",
+        "table" : "physicalTable:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT",
+        "memberKey" : "MEMBER_KEY",
+        "parentKey" : "ANCESTOR_KEY",
+        "distance" : "RELATIONSHIP_DISTANCE",
+        "leafNodeIdentifier" : "IS_LEAF"
       } ]
     }
   }

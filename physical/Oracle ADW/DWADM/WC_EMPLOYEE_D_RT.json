@@ -1,0 +1,41 @@
+{
+  "physicalTable" : {
+    "name" : "WC_EMPLOYEE_D_RT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "MEMBER_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ANCESTOR_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "RELATIONSHIP_DISTANCE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "IS_LEAF",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:Oracle ADW.DWADM.WC_EMPLOYEE_D_RT.MEMBER_KEY",
+        "rightColumn" : "physicalColumn:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D.ROW_WID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}
