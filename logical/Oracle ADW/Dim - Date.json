@@ -15,12 +15,6 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.ROW_WID" ]
           }
-        }, {
-          "logicalTableSource" : "Dim_wc_month_d",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.ROW_WID" ]
-          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -750,12 +744,6 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.DIM_WC_DATE_D.PER_NAME_QTR" ]
           }
-        }, {
-          "logicalTableSource" : "Dim_wc_month_d",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Dim_WC_MONTH_D.PER_NAME_QTR" ]
-          }
         } ]
       },
       "logicalLevel" : "Detail"
@@ -874,6 +862,7 @@
     "logicalTableSources" : [ {
       "name" : "Dim_wc_month_d",
       "disable" : false,
+      "priority" : 1,
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.Dim_WC_MONTH_D" ]
       },
@@ -883,6 +872,7 @@
     }, {
       "name" : "DIM_WC_DATE_D",
       "disable" : false,
+      "priority" : 2,
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.DIM_WC_DATE_D" ]
       },
@@ -935,6 +925,14 @@
         "name" : "Date Hierarchy",
         "levels" : [ "Total", "Year", "Quater", "Month", "Detail" ]
       } ]
-    }
+    },
+    "dataFilters" : [ {
+      "accessor" : "role:BIManagers",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 = '2023 / Q1'",
+        "expressionObjects" : [ "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_QTR" ]
+      }
+    } ]
   }
 }

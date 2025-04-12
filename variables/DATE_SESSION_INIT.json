@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "DATE_SESSION_INIT",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle ADW.Oracle Connection Pool InIt Block",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT SYSDATE FROM DUAL;"
+    } ],
+    "variables" : [ {
+      "name" : "CURR_SESS_DATE",
+      "value" : "'01/01/2000'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

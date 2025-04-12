@@ -2,7 +2,7 @@
   "presentationTable" : {
     "name" : "Absence Metrics",
     "presentationColumns" : [ {
-      "name" : "APPR_DT",
+      "name" : "Approval Date",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.APPR_DT"
     }, {
       "name" : "Absence Credit",
@@ -19,6 +19,18 @@
     }, {
       "name" : "Absence Debit Month",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit Month"
+    }, {
+      "name" : "Absence Debit MTD",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit MTD"
+    }, {
+      "name" : "Absence Debit QTD",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit QTD"
+    }, {
+      "name" : "Absence Debit YTD",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit YTD"
+    }, {
+      "name" : "Absence Period Rolling 2 Months",
+      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Period Rolling 2 Months"
     } ]
   }
 }

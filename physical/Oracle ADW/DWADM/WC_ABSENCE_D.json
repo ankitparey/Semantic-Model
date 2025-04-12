@@ -29,8 +29,9 @@
       "nullable" : true
     } ],
     "caching" : {
-      "enable" : true,
-      "expiryTime" : 0
+      "enable" : false,
+      "expiryTime" : 0,
+      "expiryUnit" : "DAYS"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "Session_Init",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle ADW.Oracle Connection Pool InIt Block",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT 5 FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "LOGLEVEL",
+      "value" : "5",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "initBlock" : {
+    "name" : "YEAR_INIT_BLOCK",
+    "type" : "GLOBAL",
+    "connectionPool" : "connectionPool:Oracle ADW.Oracle Connection Pool InIt Block",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT TO_CHAR(SYSDATE,'YYYY'),TO_NUMBER(TO_CHAR(SYSDATE,'YYYY'))-1,SYSDATE,SYSDATE -180 FROM DUAL;"
+    } ],
+    "variables" : [ {
+      "name" : "CURR_YEAR",
+      "value" : "'2021'"
+    }, {
+      "name" : "PREV_YEAR",
+      "value" : "'2020'"
+    }, {
+      "name" : "CURR_DATE",
+      "value" : "'01/01/1900'"
+    }, {
+      "name" : "PREV_6MONTH_DATE",
+      "value" : "'01/01/1900'"
+    } ],
+    "runSchedule" : {
+      "interval" : 3,
+      "intervalUnit" : "MINUTES",
+      "startingOn" : "2024-11-18 07:48:19.426"
+    },
+    "disable" : false
+  }
+}

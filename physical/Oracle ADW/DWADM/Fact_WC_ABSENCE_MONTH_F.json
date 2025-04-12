@@ -25,7 +25,7 @@
       "rightTable" : "physicalTable:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D",
       "useJoinExpression" : false,
       "joinConditions" : [ {
-        "leftColumn" : "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.EMPLOYEE_WID",
+        "leftColumn" : "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.EMPLOYEE_ID",
         "rightColumn" : "physicalColumn:Oracle ADW.DWADM.DIM_WC_EMPLOYEE_D.ROW_WID"
       } ],
       "joinType" : "INNER",

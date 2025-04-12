@@ -1,0 +1,10 @@
+{
+  "initBlock" : {
+    "name" : "CUTT_OFF_INIT",
+    "type" : "STATIC",
+    "variables" : [ {
+      "name" : "CUT_OF_VAR",
+      "value" : "2023"
+    } ]
+  }
+}

@@ -17,26 +17,6 @@
         } ]
       }
     }, {
-      "name" : "EMPLOYEE_WID",
-      "dataType" : "NUMERIC",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "FACT_WC_ABSENCE_F",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.EMPLOYEE_WID" ]
-          }
-        }, {
-          "logicalTableSource" : "Fact_wc_absence_month_f",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.EMPLOYEE_WID" ]
-          }
-        } ]
-      }
-    }, {
       "name" : "ABS_WID",
       "dataType" : "NUMERIC",
       "writeable" : false,
@@ -96,6 +76,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ABS_CREDIT" ]
           }
+        }, {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_CREDIT" ]
+          }
         } ]
       },
       "aggregation" : {
@@ -112,6 +98,12 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.FACT_WC_ABSENCE_F.ABS_DEBIT" ]
+          }
+        }, {
+          "logicalTableSource" : "Fact_wc_absence_month_f",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_DEBIT" ]
           }
         } ]
       },
@@ -135,62 +127,6 @@
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.EMPLOYEE_ID" ]
-          }
-        } ]
-      }
-    }, {
-      "name" : "ABS_CREDIT",
-      "dataType" : "NUMERIC",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "Fact_wc_absence_month_f",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_CREDIT" ]
-          }
-        } ]
-      }
-    }, {
-      "name" : "ABS_DEBIT",
-      "dataType" : "NUMERIC",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "Fact_wc_absence_month_f",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.ABS_DEBIT" ]
-          }
-        } ]
-      }
-    }, {
-      "name" : "APPR_MONTH_WID",
-      "dataType" : "VARCHAR",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "Fact_wc_absence_month_f",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.APPR_MONTH_WID" ]
-          }
-        } ]
-      }
-    }, {
-      "name" : "TRANS_MONTH_WID",
-      "dataType" : "VARCHAR",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "Fact_wc_absence_month_f",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F.TRANS_MONTH_WID" ]
           }
         } ]
       }
@@ -228,20 +164,77 @@
       "aggregation" : {
         "rule" : "SUM"
       }
+    }, {
+      "name" : "Absence Debit MTD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "TODATE(%1 , %2  )",
+          "expressionObjects" : [ "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit", "logicalLevel:Oracle ADW.Dim - Date.Month" ]
+        }
+      }
+    }, {
+      "name" : "Absence Debit YTD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "TODATE(%1 , %2 )",
+          "expressionObjects" : [ "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit", "logicalLevel:Oracle ADW.Dim - Date.Year" ]
+        }
+      }
+    }, {
+      "name" : "Absence Debit QTD",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "TODATE(%1 , %2 )",
+          "expressionObjects" : [ "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit", "logicalLevel:Oracle ADW.Dim - Date.Quater" ]
+        }
+      }
+    }, {
+      "name" : "Absence Debit Ago",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "AGO(%1 ,1)",
+          "expressionObjects" : [ "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit" ]
+        }
+      }
+    }, {
+      "name" : "Absence Period Rolling 2 Months",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "PERIODROLLING(%1 , -2, 0)",
+          "expressionObjects" : [ "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit" ]
+        }
+      }
     } ],
     "logicalTableSources" : [ {
       "name" : "Fact_wc_absence_month_f",
       "disable" : false,
+      "priority" : 1,
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.Fact_WC_ABSENCE_MONTH_F" ]
       },
-      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Detail", "logicalLevel:Oracle ADW.Dim - Absence.Detail" ],
+      "dataGranularity" : [ "logicalLevel:Oracle ADW.Dim - Date.Month", "logicalLevel:Oracle ADW.Dim - Absence.Detail", "logicalLevel:Oracle ADW.Dim - Employee.Detail" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
     }, {
       "name" : "FACT_WC_ABSENCE_F",
       "disable" : false,
+      "priority" : 2,
       "tableMapping" : {
         "tables" : [ "physicalTable:Oracle ADW.DWADM.FACT_WC_ABSENCE_F" ]
       },
@@ -249,6 +242,14 @@
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
+    } ],
+    "dataFilters" : [ {
+      "accessor" : "role:BIManagers",
+      "status" : "ENABLED",
+      "filter" : {
+        "expressionTemplate" : "%1 = '2023 / Q1'",
+        "expressionObjects" : [ "logicalColumn:Oracle ADW.Dim - Date.PER_NAME_QTR" ]
+      }
     } ],
     "joins" : [ {
       "rightTable" : "logicalTable:Oracle ADW.Dim - Absence",

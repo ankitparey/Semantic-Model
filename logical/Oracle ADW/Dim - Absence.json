@@ -51,7 +51,7 @@
     }, {
       "name" : "ACCRUAL_TYPE",
       "dataType" : "VARCHAR",
-      "writeable" : false,
+      "writeable" : true,
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {

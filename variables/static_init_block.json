@@ -1,0 +1,10 @@
+{
+  "initBlock" : {
+    "name" : "static_init_block",
+    "type" : "STATIC",
+    "variables" : [ {
+      "name" : "static_year",
+      "value" : "2023"
+    } ]
+  }
+}

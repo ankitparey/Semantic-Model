@@ -1,0 +1,15 @@
+{
+  "initBlock" : {
+    "name" : "ROW_INIT_BLOCK",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Oracle ADW.Oracle Connection Pool InIt Block",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT VAR_NAME,VAR_VALUE FROM EMPLOYEE_DET "
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : true,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : false
+  }
+}

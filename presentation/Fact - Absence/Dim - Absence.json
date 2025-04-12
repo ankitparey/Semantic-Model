@@ -16,6 +16,28 @@
     }, {
       "name" : "ABSENCE_ID",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Dim - Absence.ABSENCE_ID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Oracle ADW.Dim - Absence",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Absence.Total",
+        "localization" : { }
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Oracle ADW.Dim - Absence.Detail",
+        "displayColumn" : "presentationColumn:Fact - Absence.Dim - Absence.ROW_WID",
+        "localization" : { }
+      } ]
+    } ],
+    "permissions" : [ {
+      "accessor" : "role:BIServiceAdministrator",
+      "access" : "WRITE"
+    }, {
+      "accessor" : "role:BIConsumer",
+      "access" : "WRITE"
     } ]
   }
 }
