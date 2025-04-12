@@ -8,9 +8,6 @@
       "name" : "Absence Debit",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Debit"
     }, {
-      "name" : "EMPLOYEE_ID",
-      "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.EMPLOYEE_ID"
-    }, {
       "name" : "Absence Credit Month",
       "sourceLogicalColumn" : "logicalColumn:Oracle ADW.Fact - Absence.Absence Credit Month"
     }, {
